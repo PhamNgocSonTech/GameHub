@@ -9,18 +9,40 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Nunito", sans-serif;
-  background: #0e141b;
+  background: #202c3c;
   color: #fff;
 }
 
 /* Common */
 .main {
-  width: 1920px;
-  max-width: calc(100% - 48px);
+  /* width: 1920px; */
+  /* max-width: calc(100% - 48px); */
 }
 
 a {
   text-decoration: none;
+}
+
+.title__heading {
+  color: var(--Text-Main, #f3f3f3);
+  /* Heading/Small */
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.game__title {
+  color: var(--Text-Main, #f3f3f3);
+  /* Heading/Medium */
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.game__desc {
+  color: var(--Text-Main, #f3f3f3);
+  /* Body/Large */
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Navbar */
@@ -64,10 +86,9 @@ a {
 }
 
 .hero {
-  width: 100vw;
+  width: 100%x;
   height: 623px;
   background: url("../img/homepage.jpg") lightgray 50% / cover no-repeat;
-  /* background-size: cover; */
 }
 
 /* Featured */
@@ -79,15 +100,56 @@ a {
 }
 
 .featured__container {
+  margin-top: 30px;
+  border-radius: 5px;
+  background: rgba(14, 20, 27, 0.2);
+  padding: 20px 15px;
+}
+
+.featured__container--wrap {
+  min-width: 1251px;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  gap: 17px;
+  background: #0e141b;
   padding: 15px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured__image img {
   width: 766px;
   height: 458px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.featured__content {
+  width: 468px;
+}
+
+.featured__desc {
+  margin-top: 11px;
+}
+
+.game__title--large {
+  font-size: 2.6rem;
+}
+
+.game__desc--small {
+  font-size: 1.4rem;
+}
+
+.featured__content--images {
+  /* width: 100%; */
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7px;
+}
+
+.featured__content--images img {
+  width: 230px;
   border-radius: 3px;
   object-fit: cover;
 }
