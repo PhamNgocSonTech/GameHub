@@ -126,13 +126,33 @@ a {
 }
 
 .featured__container {
+  box-sizing: content-box;
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
   padding: 20px 15px;
   border-radius: 5px;
   background: rgba(14, 20, 27, 0.2);
+}
+
+.icon__arrow--left:hover,
+.icon__arrow--right:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.icon__arrow--left,
+.icon__arrow--right {
+  padding: 10px;
+
+  /* background: #66c0f4; */
+  /* padding: 4px; */
+}
+
+.icon__arrow--right {
+  rotate: 180deg;
 }
 
 .featured__container--wrap {
