@@ -268,3 +268,29 @@ a {
   overflow: hidden; /* Cắt bớt nội dung nếu quá dài */
   text-overflow: ellipsis; /* Hiển thị dấu ... nếu nội dung dài */
 }
+
+.featured__indicators {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.featured__indicators-item {
+  /* display: inline-block; */
+  text-align: center;
+  width: 35px;
+  height: 8px;
+  border-radius: 40px;
+  background: var(--bg-main, #0e141b);
+  cursor: pointer;
+}
+
+.featured__indicators--active {
+  background: var(--color-secondary);
+}
+
+.featured__indicators-item.featured__indicators--active {
+  cursor: default;
+}
